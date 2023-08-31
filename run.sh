@@ -1,5 +1,5 @@
 clear
-cd PracticoArraySol
+cd PracticoArray
 printf "Compiling..."
 javac -d bin src/consola/*.java src/logica/*.java
 if [ $? == 0 ] 

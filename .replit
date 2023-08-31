@@ -1,4 +1,7 @@
 run = "bash run.sh"
+entrypoint = "Main.java"
+hidden = ["**/*.class"]
+compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
 
 [nix]
 channel = "stable-22_05"
@@ -48,3 +51,15 @@ mainClass = "Main"
 
 [unitTest]
 language = "java"
+
+[languages]
+
+[languages.java]
+pattern = "**/*.java"
+
+[languages.java.languageServer]
+start = "jdt-language-server"
+
+[deployment]
+build = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+run = "java -classpath .:target/dependency/* Main"
