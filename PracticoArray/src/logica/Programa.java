@@ -8,18 +8,20 @@ public class Programa {
 	Random azar = new Random();
 	
 	public void iniciar() {
-				
-		//1
+
+	 }
+	
+	//1
 		System.out.println("\nEjercicio 1:");
 		
-    //2 y 3
+    	//2 y 3
        
-   //4 y 5
+ 	//4 y 5
     
 
-     //6
+    	//6
    
-   //7
+  	//7
  
   } //fin main
 
